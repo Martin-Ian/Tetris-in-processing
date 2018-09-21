@@ -63,13 +63,17 @@ void keyPressed()
   {
     S.moveRight();
   }
-  if (key == 'Z' || key == 'z')
+  if (key == 'Z' || key == 'z' || keyCode == RIGHT)
   {
     S.rotateLeft();
   }
-  if (key == 'X' || key == 'x')
+  if (key == 'X' || key == 'x' || keyCode == LEFT)
   {
     S.rotateRight();
+  }
+  if (key == 'S' || key == 's')
+  {
+    S.moveDown();
   }
   if (key == ' ')
   {
